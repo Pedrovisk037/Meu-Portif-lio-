@@ -1,0 +1,20 @@
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+.fundo {
+    background-color: yellow;
+}
+body {
+    background-image: url(../img/image.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#muda {
+    background-color: red;
+}
+#principal {
+    font-weight: bolder;
+}

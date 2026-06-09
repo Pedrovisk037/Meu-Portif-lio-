@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<header>
+    <h1>Contato</h1>
+    <nav>
+        <ul>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='hobbies.html'">Hobbies</button>
+            <button onclick="location.href='contato.html'">Contato</button>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main>
+        <div class="box1 contact-box">
+            <form id="contactForm" class="contact-form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com">
+
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" min="10" max="120" placeholder="Sua idade">
+
+                <label for="area">Área de interesse</label>
+                <select id="area" name="area">
+                    <option value="">Selecione uma área</option>
+                    <option value="front-end">Front-end</option>
+                    <option value="back-end">Back-end</option>
+                    <option value="data">Dados / SQL</option>
+                    <option value="ux-ui">UX / UI</option>
+                    <option value="servidor">Servidores</option>
+                </select>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" maxlength="300" placeholder="Conte sua dúvida ou objetivo"></textarea>
+                <div id="charCount" class="char-count">0 / 300</div>
+
+                <button type="submit">Enviar</button>
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
